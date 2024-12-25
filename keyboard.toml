@@ -45,7 +45,7 @@ keymap = [
 
 [ble]
 enabled = true
-battery_adc_pin = "vddh"
+
 
 [split]
 connection = "ble"
