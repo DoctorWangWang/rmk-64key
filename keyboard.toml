@@ -1,10 +1,10 @@
 # Documentation: https://haobogu.github.io/rmk/keyboard_configuration.html
 [keyboard]
-name = "Cygnus"
-product_name = "Cygnus"
+name = "64key"
+product_name = "64key"
 vendor_id = 0x4c4b
 product_id = 0x4643
-manufacturer = "xinta"
+manufacturer = "syjh"
 chip = "nrf52840"
 
 
@@ -45,7 +45,7 @@ keymap = [
 
 [ble]
 enabled = true
-
+battery_adc_pin = "vddh"
 
 [split]
 connection = "ble"
