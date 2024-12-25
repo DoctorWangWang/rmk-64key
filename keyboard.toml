@@ -12,19 +12,20 @@ chip = "nrf52840"
 
 [layout]
 # WARNING: Currently row2col/col2row is set in RMK's feature gate, configs here do nothing actually
-# row2col = true
-rows = 4
+#row2col = true
+rows = 6
 cols = 12
-layers = 2
+layers = 5
 keymap = [
-    [
-        ["Kp7", "Kp8", "Kp9","Kp7", "Kp8", "Kp9","Kp7", "Kp8", "Kp9","Kp7", "Kp8", "Kp9"],
-        ["Kp4", "Kp5", "Kp6","Kp4", "Kp5", "Kp6","Kp4", "Kp5", "Kp6","Kp4", "Kp5", "Kp6"],
-        ["Kp1", "Kp2", "Kp3","Kp1", "Kp2", "Kp3","Kp1", "Kp2", "Kp3","Kp1", "Kp2", "Kp3"],
-        ["_","_","_","Kp0", "MO(1)", "Dot","Kp0", "MO(1)", "Dot","_","_","_"]
-    ]
+     [
+        ["Escape", "Kc1", "Kc2", "Kc3", "Kc4", "Kc5", "Kc6", "Kc7", "Kc8", "Kc9", "Kc0", "Backspace"],
+        ["Tab", "Q", "W", "E", "R", "T", "Y", "U", "I", "O", "P", "Backslash"],
+        ["CapsLock", "A", "S", "D", "F", "G", "H", "J", "K", "L", "Semicolon", "Quote"],
+        ["LShift", "Z", "X", "C", "V", "B", "N", "M", "Comma", "Dot", "Slash", "WM(Enter,RShift)"],
+        ["_", "LCtrl", "LGui", "LAlt", "Enter", "MO(2)", "PageUp", "PageDown", "WM(Minus,RAlt)", "WM(Equal,RCtrl)", "MO(1)", "_"],
+        ["_", "_", "_", "_", "Space", "LT(1, Grave)", "LT(2, Delete)", "Space", "_", "_", "_", "_"],
+    ],
 ]
-
 [light]
 # All light pins are high-active by default, uncomment if you want it to be low-active
 # capslock.pin = "PB2"
@@ -52,27 +53,27 @@ connection = "ble"
 
 
 [split.central]
-rows = 4
+rows = 6
 cols = 6
 row_offset = 0
 col_offset = 0
 ble_addr = [0x18, 0xe2, 0x21, 0x80, 0xc0, 0xc7]
 [split.central.matrix]
 matrix_type = "normal"
-input_pins = ["P0_22", "P0_24", "P1_00", "P0_11"]
-output_pins = ["P0_09", "P0_10", "P1_11", "P1_13", "P1_15", "P0_02"] 
+input_pins = ["P0_02", "P1_15", "P1_13", "P1_11", "P0_10", "P0_09"]
+output_pins = ["P0_22", "P0_24", "P1_00", "P0_11", "P1_04", "P1_06"]
 
 
 [[split.peripheral]]
-rows = 4
+rows = 6
 cols = 6
 row_offset = 0
 col_offset = 6
 ble_addr = [0x7e, 0xfe, 0x73, 0x9e, 0x66, 0xe3]
 [split.peripheral.matrix]
 matrix_type = "normal"
-input_pins = ["P0_22", "P0_24", "P1_00", "P0_11"]
-output_pins = ["P0_09", "P0_10", "P1_11", "P1_13", "P1_15", "P0_02"] 
+input_pins = ["P0_02", "P1_15", "P1_13", "P1_11", "P0_10", "P0_09"]
+output_pins = ["P0_22", "P0_24", "P1_00", "P0_11", "P1_04", "P1_06"]
 
 
 
