@@ -33,7 +33,7 @@ keymap = [
 # scrolllock.pin = "PA3"
 # scrolllock.low_active = true
 # Just ignore if no light pin is used for it
-# numslock.pin = "PA5"
+ numslock.pin = "P0_13"
 # numslock.low_active = true
 
 [storage]
