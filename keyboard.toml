@@ -34,7 +34,7 @@ keymap = [
 # scrolllock.low_active = true
 # Just ignore if no light pin is used for it
  numslock.pin = "P0_13"
-# numslock.low_active = true
+ numslock.low_active = true
 
 [storage]
 # Storage feature is enabled by default
