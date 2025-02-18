@@ -8,8 +8,6 @@ manufacturer = "syjh"
 chip = "nrf52840"
 
 
-
-
 [layout]
 # WARNING: Currently row2col/col2row is set in RMK's feature gate, configs here do nothing actually
 #row2col = true
