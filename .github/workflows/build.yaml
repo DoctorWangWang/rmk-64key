@@ -3,7 +3,8 @@ on:
   workflow_dispatch:
   push:
     paths:
-      - "**"
+      - "keyboard.toml"
+      - "vial.json"
 
 jobs:
   build:
