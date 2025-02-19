@@ -45,6 +45,9 @@ keymap = [
 enabled = true
 battery_adc_pin = "vddh"
 
+[behavior]
+enable_hrm = true
+
 [split]
 connection = "ble"
 
