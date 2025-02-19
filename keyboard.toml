@@ -31,8 +31,8 @@ keymap = [
 # scrolllock.pin = "PA3"
 # scrolllock.low_active = true
 # Just ignore if no light pin is used for it
-numslock.pin = "P0_13"
-numslock.low_active = false
+# numslock.pin = "P0_13"
+# numslock.low_active = false
 
 [storage]
 # Storage feature is enabled by default
@@ -43,7 +43,7 @@ numslock.low_active = false
 
 [ble]
 enabled = true
-battery_adc_pin = "vddh"
+# battery_adc_pin = "vddh"
 
 [split]
 connection = "ble"
