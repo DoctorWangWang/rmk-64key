@@ -45,6 +45,14 @@ keymap = [
 enabled = true
 battery_adc_pin = "vddh"
 
+
+# The voltage divider setting for saadc. 
+# For example, nice!nano have 806 + 2M resistors, the saadc measures voltage on 2M resistor, so the two values should be set to 2000 and 2806
+adc_divider_measured = 2000
+adc_divider_total = 2806
+
+
+
 [behavior]
 # enable_hrm = true
 
