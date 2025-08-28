@@ -58,10 +58,6 @@ timeout = "150ms"
 [[behavior.morse.morses]]
 tap = "Space"
 hold = "LCtrl"
-
-[[behavior.morse.morses]]
-tap_actions = ["F1", "F2", "F3", "F4"]  # 1 tap = F1, 2 taps = F2, 3 taps = F3, 4 taps = F4
-hold_actions = ["MO(1)", "MO(2)", "MO(3)", "MO(4)"]  # Hold after 1 tap = layer 1, etc.
 timeout = "200ms"
 
 [[behavior.morse.morses]]
