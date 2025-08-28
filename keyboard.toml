@@ -48,23 +48,6 @@ enabled = true
 [behavior]
 tap_hold = { enable_hrm = true, prior_idle_time = "120ms", hold_timeout = "250ms" }
 
-[[behavior.morse.morses]]
-tap = "A"
-hold = "WM(A, LShift)"
-double_tap = "CapsLock"
-hold_after_tap = "A"
-timeout = "150ms"
-
-[[behavior.morse.morses]]
-tap = "Space"
-hold = "LCtrl"
-timeout = "200ms"
-
-[[behavior.morse.morses]]
-tap_actions = ["Tab", "Escape", "CapsLock"]  # 1 tap = Tab, 2 taps = Escape, 3 taps = CapsLock
-hold_actions = ["LCtrl", "LAlt", "LShift"]  # Hold after 1 tap = Ctrl, etc.
-timeout = "250ms"
-
 
 
 [split]
